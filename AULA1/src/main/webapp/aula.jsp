@@ -1,9 +1,3 @@
-<%-- 
-    Document   : aula
-    Created on : 03/03/2022, 20:26:05
-    Author     : DanieL
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
