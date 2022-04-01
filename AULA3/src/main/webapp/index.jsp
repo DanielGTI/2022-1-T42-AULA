@@ -16,7 +16,7 @@
             Descrição:  <input type="text" name="descricao">
             Unidade:    <%=new Unidade().getUnidade()%>
             Saldo:      <input type="text" name="saldo">
-            Valor Uni   <input type="text" name="ValorUnitario">
+            Valor Uni   <input type="text" name="valorUnitario">
             Observação: <input type="text" name="obs">
             <input type="submit" value="Incluir" name="acao">
             <input type="reset" value="Limpar">

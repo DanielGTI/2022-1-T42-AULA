@@ -1,13 +1,12 @@
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" errorPage="PgErros.jsp"%>
+<jsp:useBean id="item" class="Suporte.Dados"/>
+<jsp:setProperty name="item" property="*" />
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Resultado</title>
-    </head>
-    <body>
-        <h3>Cadastro de Itens: ÇÃO</h3> 
-
+    <head><title>Resultado</title></head>
+    <body><h3>Cadastro de Itens:</h3> 
         <%
+            /*
             int codigo          = Integer.parseInt(request.getParameter("codigo"));
             String descricao    = request.getParameter("descricao");
             String unidade      = request.getParameter("unidade");
@@ -20,6 +19,14 @@
             out.print("<br>Descrição = " + descricao);
             out.print("<br>Valor Unitário = " + valorUnitario);
             out.print("<br>Unidade =  " + unidade);
+            */
         %>
+        <pre>
+        Código    = <%=item.getCodigo()%>
+        Descrição = <%=item.getDescricao()%>
+        Unidade   = <%=item.getUnidade()%>
+        Valor     = <%=item.getValorUnitario()%>
+
+        </pre>
     </body>
 </html>
